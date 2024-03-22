@@ -97,6 +97,13 @@ function! s:AfterHighlight()
         hi! link ToggleTerm1SignColumn   EndOfBuffer
     endif
 
+    if has('nvim') && luaeval("pcall(require, 'null-ls')")
+        hi! link NullLsInfoBorder   FloatBorder
+        hi! link NullLsInfoHeader   Type
+        hi! link NullLsInfoTitle    Title
+        hi! link NullLsInfoSources  Label
+    endif
+
     " tree-sitter highlights
     if has('nvim')
         " Misc
