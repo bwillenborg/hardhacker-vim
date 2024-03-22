@@ -151,37 +151,6 @@ function! s:AfterHighlight()
         hi! link @constructor.tsx   HardHackerBlue
         hi! link @tag.delimiter.tsx HardHackerBlue
 
-        " LSP Semantic Token Groups
-        hi! link @lsp.type.boolean                      @boolean
-        hi! link @lsp.type.builtinType                  @type.builtin
-        hi! link @lsp.type.comment                      @comment
-        hi! link @lsp.type.enum                         @type
-        hi! link @lsp.type.enumMember                   @constant
-        hi! link @lsp.type.escapeSequence               @string.escape
-        hi! link @lsp.type.formatSpecifier              @punctuation.special
-        hi! link @lsp.type.interface                    Type
-        hi! link @lsp.type.keyword                      @keyword
-        hi! link @lsp.type.namespace                    @namespace
-        hi! link @lsp.type.number                       @number
-        hi! link @lsp.type.operator                     @operator
-        hi! link @lsp.type.parameter                    @parameter
-        hi! link @lsp.type.property                     @property
-        hi! link @lsp.type.selfKeyword                  @variable.builtin
-        hi! link @lsp.type.string.rust                  @string
-        hi! link @lsp.type.typeAlias                    @type.definition
-        hi! link @lsp.type.unresolvedReference          Error
-        hi! link @lsp.typemod.class.defaultLibrary      @type.builtin
-        hi! link @lsp.typemod.enum.defaultLibrary       @type.builtin
-        hi! link @lsp.typemod.enumMember.defaultLibrary @constant.builtin
-        hi! link @lsp.typemod.function.defaultLibrary   @function.builtin
-        hi! link @lsp.typemod.keyword.async             @keyword.coroutine
-        hi! link @lsp.typemod.macro.defaultLibrary      @function.builtin
-        hi! link @lsp.typemod.method.defaultLibrary     @function.builtin
-        hi! link @lsp.typemod.operator.injected         @operator
-        hi! link @lsp.typemod.string.injected           @string
-        hi! link @lsp.typemod.type.defaultLibrary       HardHackerGreen
-        hi! link @lsp.typemod.variable.defaultLibrary   @variable.builtin
-        hi! link @lsp.typemod.variable.injected         @variable
     endif
 
     " Execute all custom highlights
