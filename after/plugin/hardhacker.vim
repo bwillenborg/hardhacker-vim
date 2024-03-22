@@ -159,7 +159,6 @@ function! s:AfterHighlight()
         hi! link @lsp.type.enumMember                   @constant
         hi! link @lsp.type.escapeSequence               @string.escape
         hi! link @lsp.type.formatSpecifier              @punctuation.special
-       -- hi! link @lsp.type.interface                    Type
         hi! link @lsp.type.keyword                      @keyword
         hi! link @lsp.type.namespace                    @namespace
         hi! link @lsp.type.number                       @number
@@ -169,7 +168,6 @@ function! s:AfterHighlight()
         hi! link @lsp.type.selfKeyword                  @variable.builtin
         hi! link @lsp.type.string.rust                  @string
         hi! link @lsp.type.typeAlias                    @type.definition
-     --   hi! link @lsp.type.unresolvedReference          Error
         hi! link @lsp.typemod.class.defaultLibrary      @type.builtin
         hi! link @lsp.typemod.enum.defaultLibrary       @type.builtin
         hi! link @lsp.typemod.enumMember.defaultLibrary @constant.builtin
@@ -179,7 +177,6 @@ function! s:AfterHighlight()
         hi! link @lsp.typemod.method.defaultLibrary     @function.builtin
         hi! link @lsp.typemod.operator.injected         @operator
         hi! link @lsp.typemod.string.injected           @string
-       -- hi! link @lsp.typemod.type.defaultLibrary       HardHackerGreen
         hi! link @lsp.typemod.variable.defaultLibrary   @variable.builtin
         hi! link @lsp.typemod.variable.injected         @variable
 
