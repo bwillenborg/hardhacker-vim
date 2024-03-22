@@ -151,6 +151,9 @@ function! s:AfterHighlight()
         hi! link @constructor.tsx   HardHackerBlue
         hi! link @tag.delimiter.tsx HardHackerBlue
 
+        " LSP Semantic Token Groups
+        hi! link @lsp.type.boolean                      @boolean
+
     endif
 
     " Execute all custom highlights
